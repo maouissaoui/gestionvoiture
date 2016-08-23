@@ -1,0 +1,5 @@
+.DS_Store
+.idea/
+AngularMovie.iml
+node_modules/
+app/lib/
