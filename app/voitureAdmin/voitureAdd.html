@@ -1,0 +1,33 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2>Voiture</h2>
+    <form name="form"  role="form">
+        <div class="form-group" >
+            <label for="username">Matricule</label>
+            <input type="text" name="matricule" id="matricule" class="form-control" ng-model="voiture.matricule" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Modele</label>
+            <input type="text" name="modele" id="modele" class="form-control" ng-model="voiture.modele" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Marque</label>
+            <input type="text" name="marque" id="marque" class="form-control" ng-model="voiture.marque" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Constructeur</label>
+            <input type="text" name="constructeur" id="constructeur" class="form-control" ng-model="voiture.constructeur" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Moteur</label>
+            <input type="text" name="moteur" id="moteur" class="form-control" ng-model="voiture.moteur" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Prix</label>
+            <input type="text" name="prix" id="prix" class="form-control" ng-model="voiture.prix" required />
+        </div>
+
+    </form>
+    <div class="form-actions">
+        <a class="btn btn-primary"  ng-click="submit()">{{getBtnLabel()}}</a>
+    </div>
+</div>

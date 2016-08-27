@@ -1,7 +1,7 @@
 AngularMovie
 ============
 
-Gestionnaire de film développé avec AngularJS - Support de présentation
+Gestionnaire de location développé avec AngularJS - Support de présentation
 
 ## Installation
 * ouvrir le terminal

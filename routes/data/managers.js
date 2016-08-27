@@ -1,0 +1,32 @@
+exports.managers =
+[{"idManager":1,
+"nomManager":"AOUISSAOUI",
+"prenomManager":"Nadia",
+"cinManager":95422,
+"permisConduite":"45236",
+"nCarteCredit":5485163,
+"login":"test",
+"password":"test",
+"id":1},
+{
+	"idManager":2,
+"nomManager":"ISSAOUI",
+"prenomManager":"Fatma",
+"cinManager":864996,
+"permisConduite":"015215",
+"nCarteCredit":875449,
+"login":"log2",
+"password":"pass2",
+"id":2
+},
+{
+	"idManager":3,
+	"nomManager":"AISSAOUI",
+	"prenomManager":"Haroun",
+	"cinManager":818088286,
+	"permisConduite":"571265",
+	"nCarteCredit":876554,
+	"login":"log3",
+	"password":"pass3",
+	"id":3
+}];

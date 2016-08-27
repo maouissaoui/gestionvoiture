@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="">
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="search">Filter</label>
+                <input id="search" type="text" class="form-control" placeholder="Filter ..." ng-model="searchText">
+            </div>
+        </form>
+    </div>
+
+
+    <h2 class="page-header">{{managers.length}} managers exists</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped" >
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>CIN</th>
+                <th>Permis de conduite</th>
+                <th>Carte crédit</th>
+                <th>Login</th>
+                <th>Mot de passe</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="manager in managers | filter : searchText">
+                <td>{{manager.idManager}}</td>
+                <td><a href="#/voiture/{{voiture.idVoiture}}">{{manager.nomManager}}</a></td>
+                <td>{{manager.prenomManager }}</td>
+                <td>{{manager.cinManager}}</td>
+                <td>{{manager.permisConduite}}</td>
+                <td>{{manager.nCarteCredit}}</td>
+                <td>{{manager.login}}</td>
+                <td>{{manager.password}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
