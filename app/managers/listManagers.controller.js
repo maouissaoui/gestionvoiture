@@ -5,7 +5,7 @@
         .controller('ListController', ListController);
         ListController.$inject =['$scope','ManagerService'];
 
-      function ListController($scope,VoitureService){
+      function ListController($scope,ManagerService){
         ManagerService.loadManagers().success(function(resp){
         $scope.managers=resp;
     });
