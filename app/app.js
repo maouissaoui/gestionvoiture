@@ -14,14 +14,14 @@
                 templateUrl: 'home/home.view.html',
                 controllerAs: 'vm'
             })
-            .when('/connect', {
-                controller: 'ConnectController',
-                templateUrl: 'connecter/connecter.view.html',
-                controllerAs: 'vm'
-            })
             .when('/login', {
                 controller: 'LoginController',
                 templateUrl: 'login/login.view.html',
+                controllerAs: 'vm'
+                })
+            .when('/connect', {
+                controller: 'ConnectController',
+                templateUrl: 'connecter/connecter.view.html',
                 controllerAs: 'vm'
             })
             .when('/voiture', {
@@ -32,11 +32,6 @@
                 controller: 'VoituredetailController',
                 templateUrl: 'voiture/voituredetail.view.html'
             })
-            .when('/voitureAdmin', {
-                controller: 'VoitureController',
-                templateUrl: 'voiture/voitureAdmin.view.html'
-            })
-
             .when('/register', {
                 controller: 'RegisterController',
                 templateUrl: 'register/register.view.html',
@@ -46,6 +41,11 @@
                 controller: 'ReservationController',
                 templateUrl: 'reservation/reservation.view.html'
             })
+            .when('/voitureAdmin', {
+                controller: 'VoitureController',
+                templateUrl: 'voiture/voitureAdmin.view.html'
+            })
+
             .when('/homeAdmin', {
                 controller: 'HomeAdminController',
                 templateUrl: 'homeAdmin/homeAdmin.view.html',
