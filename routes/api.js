@@ -3,7 +3,6 @@
 
 var _ = require('lodash'),
 	VOITURES = require('./data/voitures').voitures;
-
 /**
  * variable to act as a generated id
  * @type {number}

@@ -19,7 +19,6 @@
                 templateUrl: 'connecter/connecter.view.html',
                 controllerAs: 'vm'
             })
-
             .when('/login', {
                 controller: 'LoginController',
                 templateUrl: 'login/login.view.html',
@@ -35,8 +34,9 @@
             })
             .when('/voitureAdmin', {
                 controller: 'VoitureController',
-                templateUrl: 'voitureAdmin/voitureAdmin.view.html'
+                templateUrl: 'voiture/voitureAdmin.view.html'
             })
+
             .when('/register', {
                 controller: 'RegisterController',
                 templateUrl: 'register/register.view.html',
@@ -51,7 +51,18 @@
                 templateUrl: 'homeAdmin/homeAdmin.view.html',
                 controllerAs: 'vm'
             })
-
+            .when('/managers', {
+                controller: 'ListController',
+                templateUrl: 'managers/listManagers.view.html'
+            })
+            .when('/voitureAdmin/:id', {
+                controller: 'VoitureAdminDetailController',
+                templateUrl: 'voitureAdmin/VoitureAdminDetail.html'
+            })
+            .when('/edit/:id?', {
+                controller: 'EditController',
+                templateUrl: 'voitureAdmin/edit.html'
+            })
             .otherwise({ redirectTo: '/login' });
     }
 

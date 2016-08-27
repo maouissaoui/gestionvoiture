@@ -23,7 +23,7 @@
             return $http.get(API_URI + '/' + id);
         },
 
-        updateVoituret : function(voiture) {
+        updateVoiture : function(voiture) {
              return $http.put(API_URI, voiture);
         }
 

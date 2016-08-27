@@ -5,9 +5,10 @@
         .module('app')
         .controller('HomeAdminController', HomeAdminController);
 
-    HomeAdminController.$inject = ['UserService', '$rootScope'];
-    function HomeAdminController(UserService, $rootScope) {
-
+    HomeAdminController.$inject = ['VoitureService','$scope','$location'];
+    function HomeAdminController(VoitureService,$scope,$location) {
+      $scope.isCurrent=function(path){
+          return $location.path()==path;
     }
 
 })();
