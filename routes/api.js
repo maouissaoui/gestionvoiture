@@ -33,7 +33,7 @@ exports.fetchVoitures = function (req, res) {
 exports.fetchVoiture = function (req, res){
     var id = req.params.id,
 
-	movie = _.find(VOITURES, function (voiture) {
+	voiture = _.find(VOITURES, function (voiture) {
 		return voiture.id == id;
 	});
 

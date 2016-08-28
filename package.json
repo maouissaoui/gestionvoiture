@@ -1,16 +1,16 @@
 {
-  "name": "AngularMovie",
+  "name": "GestionVoiture",
   "version": "1.0.0",
-  "description": "Live Coding & Hands On AngularJS",
-  "author": "Thierry LAU <thierlau@gmail.com>",
+  "description": "Application de gestion de location des voitures",
+  "author": "AOUISSAOUI Moufida <aouissaoui.Moufida@gmail.com>",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/lauterry/angularmovie/"
+    "url": "https://github.com/maouissaoui/gestionvoiture"
   },
   "bugs": {
-    "url": "https://github.com/lauterry/angularmovie/issues"
+    "url": "https://github.com/maouissaoui/gestionvoiture/issues"
   },
   "scripts": {
     "start": "node server.js"
