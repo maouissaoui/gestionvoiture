@@ -36,6 +36,11 @@
                 controller: 'RegisterController',
                 templateUrl: 'register/register.view.html',
                 controllerAs: 'vm'
+                })
+                .when('/connecter', {
+                    controller: 'ConnectController',
+                    templateUrl: 'connecter/connecter.view.html',
+                    controllerAs: 'vm'
             })
             .when('/reservation', {
                 controller: 'ReservationController',
