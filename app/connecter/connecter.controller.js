@@ -1,4 +1,3 @@
-
 (function () {
     'use strict';
 
@@ -6,24 +5,40 @@
         .module('app')
         .controller('ConnectController', ConnectController);
 
-    ConnectController.$inject = ['UserService', '$location', '$rootScope', 'FlashService'];
-    function ConnectController(UserService, $location, $rootScope, FlashService) {
+    ConnectController.$inject = ['UserService', '$rootScope'];
+    function ConnectController(UserService, $rootScope) {
         var vm = this;
 
-        vm.register = register;
+        vm.user = null;
+        vm.allUsers = [];
+        vm.deleteUser = deleteUser;
 
-        function register() {
-            vm.dataLoading = true;
-            UserService.Create(vm.user)
-                .then(function (response) {
-                    if (response.success) {
-                        FlashService.Success('Registration successful', true);
-                        $location.path('/login');
-                    } else {
-                        FlashService.Error(response.message);
-                        vm.dataLoading = false;
-                    }
+        initController();
+
+        function initController() {
+            loadCurrentUser();
+            loadAllUsers();
+        }
+
+        function loadCurrentUser() {
+            UserService.GetByUsername($rootScope.globals.currentUser.username)
+                .then(function (user) {
+                    vm.user = user;
                 });
+        }
+
+        function loadAllUsers() {
+            UserService.GetAll()
+                .then(function (users) {
+                    vm.allUsers = users;
+                });
+        }
+
+        function deleteUser(id) {
+            UserService.Delete(id)
+            .then(function () {
+                loadAllUsers();
+            });
         }
     }
 
