@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('app')
-  .controller('EditController', function ($scope,VoitureService,$routeParams,$location) {
+  .controller('EdiManagerController', function ($scope,ManagerService,$routeParams,$location) {
 
     $scope.state = "new";
       if ($routeParams.id) {
           $scope.state = "update";
-          VoitureService.findById($routeParams.id).then(function (response) {
-              $scope.voiture = response.data;
+          ManagerService.findById($routeParams.id).then(function (response) {
+              $scope.manager = response.data;
           })
       }
       $scope.getBtnLabel=function(){
@@ -15,12 +15,12 @@ angular.module('app')
       };
     $scope.submit=function(){
           if($scope.state = "new"){
-            VoitureService.createVoiture($scope.voiture);
+            ManagerService.createManager($scope.manager);
           }
           else{
-            VoitureService.updateVoiture($scope.voiture);
+            ManagerService.updateManager($scope.manager);
           }
-          $location.path('/voitureAdmin');
+          $location.path('/managers');
       }
 
   });

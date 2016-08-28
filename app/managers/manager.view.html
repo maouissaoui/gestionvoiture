@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Voiture detail</h1>
+    <div class="profil">
+        <div class="infos">
+            <ul>
+                <li><span>id: </span> {{manager.idManager}}</li>
+                <li><span>nom: </span>{{manager.nomManager}}</li>
+                 <li><span>prenom: </span>{{manager.prenomManager}}</li>
+                 <li><span>CIN: </span>{{manager.cinManager}}</li>
+                <li><span>permis de conduite: </span>{{manager.permisConduite}}</li>
+                <li><span>N : </span>{{manager.nCarteCredit}}</li>
+                 <li><span>phone: </span>{{manager.login}}</li>
+                 <li><span>phone: </span>{{manager.password}}</li>
+            </ul>
+        </div>
+        <div class="actions">
+              <a class="btn btn-primary" ng-href="#/manager/{{manager.idManager}}">Modify</a>
+              <a class="btn btn-primary"  ng-click="delete()">Delete</a>
+        </div>
+    </div>
+</div>

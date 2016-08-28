@@ -55,10 +55,19 @@
                 controller: 'ListController',
                 templateUrl: 'managers/listManagers.view.html'
             })
+             .when('/manager/:id', {
+                    controller: 'ManagerController',
+                    templateUrl: 'managers/manager.view.html'
+            })
+              .when('/manager/:id?', {
+                    controller: 'EdiManagerController',
+                    templateUrl: 'managers/editManager.view.html'
+            })
             .when('/voitureAdmin/:id', {
                 controller: 'VoitureAdminDetailController',
                 templateUrl: 'voitureAdmin/VoitureAdminDetail.html'
             })
+
             .when('/edit/:id?', {
                 controller: 'EditController',
                 templateUrl: 'voitureAdmin/edit.html'

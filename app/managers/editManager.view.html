@@ -1,0 +1,37 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2>Voiture</h2>
+    <form name="form"  role="form">
+        <div class="form-group" >
+            <label for="username">Nom *</label>
+            <input type="text" name="nomManager" id="nomManager" class="form-control" ng-model="manager.nomManager" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Prenom *</label>
+            <input type="text" name="prenomManager" id="prenomManager" class="form-control" ng-model="manager.prenomManager" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">CIN *</label>
+            <input type="text" name="cinManager" id="cinManager" class="form-control" ng-model="manager.cinManager" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Permis de conduite *</label>
+            <input type="text" name="permisConduite" id="permisConduite" class="form-control" ng-model="manager.permisConduite" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Numéro cate crédit *</label>
+            <input type="text" name="nCarteCredit" id="nCarteCredit" class="form-control" ng-model="manager.nCarteCredit" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Login *</label>
+            <input type="text" name="nCarteCredit" id="nCarteCredit" class="form-control" ng-model="manager.nCarteCredit" required />
+        </div>
+        <div class="form-group" >
+            <label for="username">Mot de passe *</label>
+            <input type="text" name="login" id="login" class="form-control" ng-model="manager.login" required />
+        </div>
+
+    </form>
+    <div class="form-actions">
+        <a class="btn btn-primary"  ng-click="submit()">{{getBtnLabel()}}</a>
+    </div>
+</div>
