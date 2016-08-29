@@ -10,5 +10,5 @@
       $scope.isCurrent=function(path){
           return $location.path()==path;
     }
-
+  }
 })();

@@ -14,6 +14,11 @@
                 templateUrl: 'home/home.view.html',
                 controllerAs: 'vm'
             })
+            .when('/accueil', {
+                controller: 'AccueilController',
+                templateUrl: 'Accueil/accueil.view.html'
+
+                })
             .when('/login', {
                 controller: 'LoginController',
                 templateUrl: 'login/login.view.html',
