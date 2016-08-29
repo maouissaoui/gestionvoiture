@@ -8,13 +8,13 @@
                  <li><span>prenom: </span>{{manager.prenomManager}}</li>
                  <li><span>CIN: </span>{{manager.cinManager}}</li>
                 <li><span>permis de conduite: </span>{{manager.permisConduite}}</li>
-                <li><span>N : </span>{{manager.nCarteCredit}}</li>
-                 <li><span>phone: </span>{{manager.login}}</li>
-                 <li><span>phone: </span>{{manager.password}}</li>
+                <li><span>N  Carte de credit: </span>{{manager.nCarteCredit}}</li>
+                 <li><span>login: </span>{{manager.login}}</li>
+                 <li><span>password: </span>{{manager.password}}</li>
             </ul>
         </div>
         <div class="actions">
-              <a class="btn btn-primary" ng-href="#/manager/{{manager.idManager}}">Modify</a>
+              <a class="btn btn-primary" ng-href="#/managerEdit/{{manager.idManager}}">Modify</a>
               <a class="btn btn-primary"  ng-click="delete()">Delete</a>
         </div>
     </div>

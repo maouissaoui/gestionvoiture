@@ -68,7 +68,7 @@
                     controller: 'ManagerController',
                     templateUrl: 'managers/manager.view.html'
             })
-              .when('/manager/:id?', {
+              .when('/managerEdit/:id?', {
                     controller: 'EdiManagerController',
                     templateUrl: 'managers/editManager.view.html'
             })
