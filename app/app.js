@@ -36,7 +36,11 @@
                 controller: 'RegisterController',
                 templateUrl: 'register/register.view.html',
                 controllerAs: 'vm'
-                })
+            })
+            .when('/tarifs', {
+                controller: 'VoitureController',
+                templateUrl: 'tarifs/tarif.view.html'
+            })
                 .when('/connecter', {
                     controller: 'ConnectController',
                     templateUrl: 'connecter/connecter.view.html',
